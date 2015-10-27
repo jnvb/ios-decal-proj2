@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hangman View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HangmanViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hangman1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="YeV-D9-jB8">
+                                <rect key="frame" x="250" y="86" width="100" height="100"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yX-Tu-dgN">
+                                <rect key="frame" x="155" y="285" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYe-IJ-4JU">
+                                <rect key="frame" x="225" y="285" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn1-AJ-x3n">
+                                <rect key="frame" x="295" y="285" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="E">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plT-Nz-RuU">
+                                <rect key="frame" x="365" y="285" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrD-es-XVv">
+                                <rect key="frame" x="15" y="285" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfv-2P-4lX">
+                                <rect key="frame" x="85" y="285" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsx-vx-dH1">
+                                <rect key="frame" x="15" y="323" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="G">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXY-3f-2Vl">
+                                <rect key="frame" x="155" y="323" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="I">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwQ-gi-0zY">
+                                <rect key="frame" x="225" y="323" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="J">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiU-0q-Rhk">
+                                <rect key="frame" x="295" y="323" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="K">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c6-3k-z7A">
+                                <rect key="frame" x="365" y="323" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="L">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8q-Ke-mxZ">
+                                <rect key="frame" x="15" y="361" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="M">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtu-dS-v2E">
+                                <rect key="frame" x="85" y="361" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="N">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFB-CB-kgq">
+                                <rect key="frame" x="155" y="361" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="O">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4n-Pg-F9G">
+                                <rect key="frame" x="225" y="361" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="P">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULQ-JG-Crn">
+                                <rect key="frame" x="295" y="361" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Q">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eP-P9-0Ks">
+                                <rect key="frame" x="365" y="361" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="R">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsX-ud-kot">
+                                <rect key="frame" x="15" y="399" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="S">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDl-Mu-NOD">
+                                <rect key="frame" x="85" y="399" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="T">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcq-uh-Sta">
+                                <rect key="frame" x="155" y="399" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="U">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msw-SD-Lba">
+                                <rect key="frame" x="225" y="399" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="V">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feT-dK-cHf">
+                                <rect key="frame" x="295" y="399" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="W">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2h-fF-cm9">
+                                <rect key="frame" x="365" y="399" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40K-H1-KDW">
+                                <rect key="frame" x="15" y="437" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Y">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfT-Xc-ntG">
+                                <rect key="frame" x="85" y="437" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Z">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2d1-Z9-TgB">
+                                <rect key="frame" x="295" y="437" width="100" height="30"/>
+                                <animations/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lr-Wd-eHN">
+                                <rect key="frame" x="295" y="437" width="100" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Guess">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zs8-c3-bUk">
+                                <rect key="frame" x="85" y="323" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="H">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmm-Ej-4dZ">
+                                <rect key="frame" x="227" y="256" width="147" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="XBo-qf-6Bc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G A M E S T A R T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdd-VG-nn0">
+                                <rect key="frame" x="100" y="209" width="400" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ULQ-JG-Crn" firstAttribute="leading" secondItem="qiU-0q-Rhk" secondAttribute="leading" id="12f-Ap-5ec"/>
+                            <constraint firstItem="7eP-P9-0Ks" firstAttribute="leading" secondItem="4c6-3k-z7A" secondAttribute="leading" id="1Hl-3B-nAN"/>
+                            <constraint firstItem="wYe-IJ-4JU" firstAttribute="baseline" secondItem="kn1-AJ-x3n" secondAttribute="baseline" id="2Jm-aD-e0s"/>
+                            <constraint firstItem="feT-dK-cHf" firstAttribute="baseline" secondItem="Msw-SD-Lba" secondAttribute="baseline" id="2fB-Rl-pCn"/>
+                            <constraint firstItem="YeV-D9-jB8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="2yP-1v-S6O"/>
+                            <constraint firstItem="Jtu-dS-v2E" firstAttribute="baseline" secondItem="L8q-Ke-mxZ" secondAttribute="baseline" id="35V-xI-aVB"/>
+                            <constraint firstItem="wYe-IJ-4JU" firstAttribute="top" secondItem="Pmm-Ej-4dZ" secondAttribute="bottom" constant="8" symbolic="YES" id="7Fe-uM-Xm2"/>
+                            <constraint firstItem="Jtu-dS-v2E" firstAttribute="baseline" secondItem="HFB-CB-kgq" secondAttribute="baseline" id="7iD-22-3Vj"/>
+                            <constraint firstItem="qiU-0q-Rhk" firstAttribute="baseline" secondItem="YwQ-gi-0zY" secondAttribute="baseline" id="ABU-PQ-15Y"/>
+                            <constraint firstItem="qrD-es-XVv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D1u-c7-NxB"/>
+                            <constraint firstItem="40K-H1-KDW" firstAttribute="leading" secondItem="AsX-ud-kot" secondAttribute="leading" id="DkQ-s0-WgH"/>
+                            <constraint firstItem="Kcq-uh-Sta" firstAttribute="leading" secondItem="HFB-CB-kgq" secondAttribute="leading" id="Gm1-U8-8W7"/>
+                            <constraint firstItem="wYe-IJ-4JU" firstAttribute="baseline" secondItem="3yX-Tu-dgN" secondAttribute="baseline" id="HqS-y8-d33"/>
+                            <constraint firstItem="YwQ-gi-0zY" firstAttribute="baseline" secondItem="zXY-3f-2Vl" secondAttribute="baseline" id="HsW-SR-hyy"/>
+                            <constraint firstItem="zs8-c3-bUk" firstAttribute="leading" secondItem="qfv-2P-4lX" secondAttribute="leading" id="IJF-lj-yWL"/>
+                            <constraint firstItem="j4n-Pg-F9G" firstAttribute="leading" secondItem="YwQ-gi-0zY" secondAttribute="leading" id="JEi-wI-nHm"/>
+                            <constraint firstItem="kn1-AJ-x3n" firstAttribute="leading" secondItem="wYe-IJ-4JU" secondAttribute="trailing" constant="40" id="JL3-Z1-Yl8"/>
+                            <constraint firstItem="cdd-VG-nn0" firstAttribute="centerX" secondItem="Pmm-Ej-4dZ" secondAttribute="centerX" id="JYn-rt-giD"/>
+                            <constraint firstItem="feT-dK-cHf" firstAttribute="leading" secondItem="ULQ-JG-Crn" secondAttribute="leading" id="JlB-R9-5Mg"/>
+                            <constraint firstItem="cdd-VG-nn0" firstAttribute="centerX" secondItem="YeV-D9-jB8" secondAttribute="centerX" id="Liy-Pl-Pc0"/>
+                            <constraint firstItem="L8q-Ke-mxZ" firstAttribute="top" secondItem="Rsx-vx-dH1" secondAttribute="bottom" constant="8" symbolic="YES" id="MnL-tY-fyx"/>
+                            <constraint firstItem="40K-H1-KDW" firstAttribute="baseline" secondItem="BfT-Xc-ntG" secondAttribute="baseline" id="PGq-be-WSm"/>
+                            <constraint firstItem="ZDl-Mu-NOD" firstAttribute="baseline" secondItem="AsX-ud-kot" secondAttribute="baseline" id="Rtl-DS-5x2"/>
+                            <constraint firstItem="AsX-ud-kot" firstAttribute="top" secondItem="L8q-Ke-mxZ" secondAttribute="bottom" constant="8" symbolic="YES" id="S9G-w0-xm2"/>
+                            <constraint firstItem="cdd-VG-nn0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="TBO-gF-04T"/>
+                            <constraint firstItem="YeV-D9-jB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UDY-le-NnG"/>
+                            <constraint firstItem="2d1-Z9-TgB" firstAttribute="baseline" secondItem="BfT-Xc-ntG" secondAttribute="baseline" id="XQb-04-JAP"/>
+                            <constraint firstItem="Msw-SD-Lba" firstAttribute="baseline" secondItem="Kcq-uh-Sta" secondAttribute="baseline" id="ZUS-c5-Cyd"/>
+                            <constraint firstItem="3yX-Tu-dgN" firstAttribute="leading" secondItem="qfv-2P-4lX" secondAttribute="trailing" constant="40" id="ZvY-CU-J5L"/>
+                            <constraint firstItem="zXY-3f-2Vl" firstAttribute="baseline" secondItem="zs8-c3-bUk" secondAttribute="baseline" id="aJR-CS-kgu"/>
+                            <constraint firstItem="zXY-3f-2Vl" firstAttribute="leading" secondItem="3yX-Tu-dgN" secondAttribute="leading" id="aN2-ef-SpC"/>
+                            <constraint firstItem="ZDl-Mu-NOD" firstAttribute="leading" secondItem="Jtu-dS-v2E" secondAttribute="leading" id="b7L-ma-ZRr"/>
+                            <constraint firstItem="Jtu-dS-v2E" firstAttribute="leading" secondItem="zs8-c3-bUk" secondAttribute="leading" id="c2z-AN-XY5"/>
+                            <constraint firstItem="ULQ-JG-Crn" firstAttribute="baseline" secondItem="7eP-P9-0Ks" secondAttribute="baseline" id="cn4-eJ-8u5"/>
+                            <constraint firstItem="zs8-c3-bUk" firstAttribute="baseline" secondItem="Rsx-vx-dH1" secondAttribute="baseline" id="cyA-Kw-8tX"/>
+                            <constraint firstItem="qrD-es-XVv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="dfz-9K-bvE"/>
+                            <constraint firstItem="qiU-0q-Rhk" firstAttribute="baseline" secondItem="4c6-3k-z7A" secondAttribute="baseline" id="gNd-r2-DjK"/>
+                            <constraint firstItem="YwQ-gi-0zY" firstAttribute="leading" secondItem="wYe-IJ-4JU" secondAttribute="leading" id="gWh-zF-NGM"/>
+                            <constraint firstItem="qfv-2P-4lX" firstAttribute="leading" secondItem="qrD-es-XVv" secondAttribute="trailing" constant="40" id="gb8-9u-IFt"/>
+                            <constraint firstItem="qrD-es-XVv" firstAttribute="baseline" secondItem="qfv-2P-4lX" secondAttribute="baseline" id="hBT-he-jTq"/>
+                            <constraint firstItem="plT-Nz-RuU" firstAttribute="leading" secondItem="kn1-AJ-x3n" secondAttribute="trailing" constant="40" id="hNe-y5-0Bq"/>
+                            <constraint firstItem="2d1-Z9-TgB" firstAttribute="leading" secondItem="feT-dK-cHf" secondAttribute="leading" id="hvK-R0-fPP"/>
+                            <constraint firstItem="Kcq-uh-Sta" firstAttribute="baseline" secondItem="ZDl-Mu-NOD" secondAttribute="baseline" id="iEx-ed-0kN"/>
+                            <constraint firstItem="Rsx-vx-dH1" firstAttribute="top" secondItem="qrD-es-XVv" secondAttribute="bottom" constant="8" symbolic="YES" id="j4N-CO-P97"/>
+                            <constraint firstItem="Msw-SD-Lba" firstAttribute="leading" secondItem="j4n-Pg-F9G" secondAttribute="leading" id="jL2-L7-gTE"/>
+                            <constraint firstItem="j4n-Pg-F9G" firstAttribute="baseline" secondItem="ULQ-JG-Crn" secondAttribute="baseline" id="jen-ib-NxD"/>
+                            <constraint firstItem="AsX-ud-kot" firstAttribute="leading" secondItem="L8q-Ke-mxZ" secondAttribute="leading" id="kSG-B4-5CC"/>
+                            <constraint firstItem="qiU-0q-Rhk" firstAttribute="leading" secondItem="kn1-AJ-x3n" secondAttribute="leading" id="kdj-e1-8yZ"/>
+                            <constraint firstItem="kn1-AJ-x3n" firstAttribute="baseline" secondItem="plT-Nz-RuU" secondAttribute="baseline" id="njZ-b2-ULX"/>
+                            <constraint firstItem="L8q-Ke-mxZ" firstAttribute="leading" secondItem="Rsx-vx-dH1" secondAttribute="leading" id="oxX-1i-ckN"/>
+                            <constraint firstItem="wYe-IJ-4JU" firstAttribute="leading" secondItem="3yX-Tu-dgN" secondAttribute="trailing" constant="40" id="pVm-du-vht"/>
+                            <constraint firstItem="4c6-3k-z7A" firstAttribute="leading" secondItem="plT-Nz-RuU" secondAttribute="leading" id="pz7-P6-Y1v"/>
+                            <constraint firstItem="2d1-Z9-TgB" firstAttribute="trailing" secondItem="T2h-fF-cm9" secondAttribute="trailing" id="qvd-J6-lsI"/>
+                            <constraint firstItem="Rsx-vx-dH1" firstAttribute="leading" secondItem="qrD-es-XVv" secondAttribute="leading" id="tuM-zt-px7"/>
+                            <constraint firstItem="cdd-VG-nn0" firstAttribute="top" secondItem="YeV-D9-jB8" secondAttribute="bottom" constant="23" id="uVm-kr-9OQ"/>
+                            <constraint firstItem="T2h-fF-cm9" firstAttribute="baseline" secondItem="feT-dK-cHf" secondAttribute="baseline" id="umr-uj-FnR"/>
+                            <constraint firstItem="3yX-Tu-dgN" firstAttribute="baseline" secondItem="qfv-2P-4lX" secondAttribute="baseline" id="ux4-CR-Zi9"/>
+                            <constraint firstItem="40K-H1-KDW" firstAttribute="top" secondItem="AsX-ud-kot" secondAttribute="bottom" constant="8" symbolic="YES" id="v8X-bI-Jmj"/>
+                            <constraint firstItem="HFB-CB-kgq" firstAttribute="baseline" secondItem="j4n-Pg-F9G" secondAttribute="baseline" id="whC-49-STC"/>
+                            <constraint firstItem="T2h-fF-cm9" firstAttribute="leading" secondItem="7eP-P9-0Ks" secondAttribute="leading" id="ymD-XI-dYl"/>
+                            <constraint firstItem="BfT-Xc-ntG" firstAttribute="leading" secondItem="ZDl-Mu-NOD" secondAttribute="leading" id="yvL-nC-i9D"/>
+                            <constraint firstItem="HFB-CB-kgq" firstAttribute="leading" secondItem="zXY-3f-2Vl" secondAttribute="leading" id="zyc-8j-4QC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4lr-Wd-eHN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="aBtn" destination="qrD-es-XVv" id="p9W-Lg-fZS"/>
+                        <outlet property="bBtn" destination="qfv-2P-4lX" id="7jU-L9-qxe"/>
+                        <outlet property="cBtn" destination="3yX-Tu-dgN" id="YEB-5t-aeh"/>
+                        <outlet property="dBtn" destination="wYe-IJ-4JU" id="vhG-SB-LOw"/>
+                        <outlet property="displayLabel" destination="cdd-VG-nn0" id="ryz-3Y-n9q"/>
+                        <outlet property="eBtn" destination="kn1-AJ-x3n" id="PgZ-dz-gga"/>
+                        <outlet property="fBtn" destination="plT-Nz-RuU" id="llb-fT-F4T"/>
+                        <outlet property="gBtn" destination="Rsx-vx-dH1" id="QbZ-Ux-k7s"/>
+                        <outlet property="guessBtn" destination="4lr-Wd-eHN" id="ReY-DN-GRD"/>
+                        <outlet property="hBtn" destination="zs8-c3-bUk" id="aiH-Lb-9RL"/>
+                        <outlet property="iBtn" destination="zXY-3f-2Vl" id="n8D-Z3-O3g"/>
+                        <outlet property="imageView" destination="YeV-D9-jB8" id="Rvg-gH-a8D"/>
+                        <outlet property="jBtn" destination="YwQ-gi-0zY" id="bWw-yf-Gcf"/>
+                        <outlet property="kBtn" destination="qiU-0q-Rhk" id="r5y-yN-qdB"/>
+                        <outlet property="lBtn" destination="4c6-3k-z7A" id="xtT-Bk-izM"/>
+                        <outlet property="mBtn" destination="L8q-Ke-mxZ" id="mDO-hu-7Yp"/>
+                        <outlet property="nBtn" destination="Jtu-dS-v2E" id="PYw-pv-Awt"/>
+                        <outlet property="newGameBtn" destination="2d1-Z9-TgB" id="gGg-YB-jvS"/>
+                        <outlet property="oBtn" destination="HFB-CB-kgq" id="YGe-5v-erw"/>
+                        <outlet property="pBtn" destination="j4n-Pg-F9G" id="l1q-mU-JqX"/>
+                        <outlet property="qBtn" destination="ULQ-JG-Crn" id="4xC-no-9II"/>
+                        <outlet property="rBtn" destination="7eP-P9-0Ks" id="Pu3-ho-hJn"/>
+                        <outlet property="sBtn" destination="AsX-ud-kot" id="buq-dR-K0h"/>
+                        <outlet property="statusLabel" destination="Pmm-Ej-4dZ" id="esK-37-WEi"/>
+                        <outlet property="tBtn" destination="ZDl-Mu-NOD" id="G2E-hF-hsN"/>
+                        <outlet property="uBtn" destination="Kcq-uh-Sta" id="91W-E8-lay"/>
+                        <outlet property="vBtn" destination="Msw-SD-Lba" id="wdD-p3-PtS"/>
+                        <outlet property="wBtn" destination="feT-dK-cHf" id="A39-fe-jsB"/>
+                        <outlet property="xBtn" destination="T2h-fF-cm9" id="Acw-yr-Tbe"/>
+                        <outlet property="yBtn" destination="40K-H1-KDW" id="Y9W-eH-oiZ"/>
+                        <outlet property="zBtn" destination="BfT-Xc-ntG" id="Lz9-2t-3ab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hangman1.gif" width="100" height="100"/>
+    </resources>
+</document>
