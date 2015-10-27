@@ -26,6 +26,7 @@ class HangmanViewController: UIViewController {
     var answer = ""
     var wrongCnt = 0
     var soFar = ""
+    var gameDone: Bool = false
     
     @IBOutlet var aBtn: UIButton!
     @IBOutlet var bBtn: UIButton!
@@ -64,6 +65,7 @@ class HangmanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        gameDone = false
         let words = HangmanWords()
 
         answer = words.getRandomWord()
@@ -161,7 +163,7 @@ class HangmanViewController: UIViewController {
             }
         }
         
-        if(isAnswer)
+        if(isAnswer || gameDone)
         {
             statusLabel.text = "Correct Guess!!!"
             displayLabel.text = tmpDisplay
@@ -176,8 +178,9 @@ class HangmanViewController: UIViewController {
                 }
             }
             
-            if(isFinished)
+            if(isFinished || gameDone)
             {
+                gameDone = true
                 statusLabel.text = "You Win!!"
                 let alert = UIAlertController(title: "Congratz", message: "You Win!!!", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
@@ -208,24 +211,29 @@ class HangmanViewController: UIViewController {
     
     func newGamePress()
     {
+        gameDone = false
         let words = HangmanWords()
         wrongCnt = 0
         soFar = ""
         
         answer = words.getRandomWord()
+        var tmpDisplay: String = ""
         for(var i = 0; i < answer.characters.count; i++)
         {
             if(answer[i] == " ")
             {
                 soFar += " "
+                tmpDisplay += "  "
+                
             }
             else
             {
                 soFar += "_"
+                tmpDisplay += "_ "
             }
         }
         
-        displayLabel.text = soFar
+        displayLabel.text = tmpDisplay
         
         imageView.image = UIImage(named: "hangman1.gif")
     }
